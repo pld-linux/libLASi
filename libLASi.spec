@@ -1,12 +1,12 @@
 Summary:	Unicode PostScript C++ stream output intetface library
 Summary(pl.UTF-8):	Biblioteka wyjścia strumieniowego C++ do PostScriptu z Unikodem
 Name:		libLASi
-Version:	1.1.1
-Release:	3
+Version:	1.1.2
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/lasi/%{name}-%{version}.tar.gz
-# Source0-md5:	bc5161b1d820db3dbcea24ce1c2ed5ec
+# Source0-md5:	29de80a4878aa71d497c7ae637c5d9a8
 URL:		http://lasi.sourceforge.net/
 BuildRequires:	cmake >= 2.6.4
 # libtool version >= 9.10 ("new API")
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CONCATENATED_README.release ChangeLog NEWS README README.release
+%doc AUTHORS CONCATENATED_README.release ChangeLog.* NEWS README README.release
 %attr(755,root,root) %{_libdir}/libLASi.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libLASi.so.1
 
